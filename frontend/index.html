@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Student Placement Prediction
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>
+                Student Placement Prediction
+            </h1>
+
+            <p>
+                Predict whether a student is likely to get placed
+            </p>
+
+        </div>
+
+
+        <!-- Form -->
+
+        <form id="predictionForm">
+
+
+            <!-- Row 1 -->
+
+            <div class="form-row">
+
+
+                <!-- Gender -->
+
+                <div class="form-group">
+
+                    <label for="gender">
+                        Gender
+                    </label>
+
+                    <select
+                        id="gender"
+                        required
+                    >
+
+                        <option value="">
+                            Select Gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Age -->
+
+                <div class="form-group">
+
+                    <label for="age">
+                        Age
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Enter age"
+                        min="18"
+                        max="50"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Row 2 -->
+
+            <div class="form-row">
+
+
+                <!-- Degree -->
+
+                <div class="form-group">
+
+                    <label for="degree">
+                        Degree
+                    </label>
+
+                    <select
+                        id="degree"
+                        required
+                    >
+
+                        <option value="">
+                            Select Degree
+                        </option>
+
+                        <option value="B.Tech">
+                            B.Tech
+                        </option>
+
+                        <option value="B.E">
+                            B.E
+                        </option>
+
+                        <option value="BCA">
+                            BCA
+                        </option>
+
+                        <option value="B.Sc">
+                            B.Sc
+                        </option>
+
+                        <option value="MCA">
+                            MCA
+                        </option>
+
+                        <option value="M.Tech">
+                            M.Tech
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Branch -->
+
+                <div class="form-group">
+
+                    <label for="branch">
+                        Branch
+                    </label>
+
+                    <select
+                        id="branch"
+                        required
+                    >
+
+                        <option value="">
+                            Select Branch
+                        </option>
+
+                        <option value="CSE">
+                            CSE
+                        </option>
+
+                        <option value="IT">
+                            IT
+                        </option>
+
+                        <option value="ECE">
+                            ECE
+                        </option>
+
+                        <option value="EEE">
+                            EEE
+                        </option>
+
+                        <option value="ME">
+                            ME
+                        </option>
+
+                        <option value="CE">
+                            CE
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Row 3 -->
+
+            <div class="form-row">
+
+
+                <!-- CGPA -->
+
+                <div class="form-group">
+
+                    <label for="cgpa">
+                        CGPA
+                    </label>
+
+                    <input
+                        type="number"
+                        id="cgpa"
+                        placeholder="Example: 8.5"
+                        min="0"
+                        max="10"
+                        step="0.01"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Backlogs -->
+
+                <div class="form-group">
+
+                    <label for="backlogs">
+                        Backlogs
+                    </label>
+
+                    <input
+                        type="number"
+                        id="backlogs"
+                        placeholder="Number of backlogs"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Row 4 -->
+
+            <div class="form-row">
+
+
+                <!-- Internships -->
+
+                <div class="form-group">
+
+                    <label for="internships">
+                        Internships
+                    </label>
+
+                    <input
+                        type="number"
+                        id="internships"
+                        placeholder="Number of internships"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Certifications -->
+
+                <div class="form-group">
+
+                    <label for="certifications">
+                        Certifications
+                    </label>
+
+                    <input
+                        type="number"
+                        id="certifications"
+                        placeholder="Number of certifications"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Row 5 -->
+
+            <div class="form-row">
+
+
+                <!-- Coding Skills -->
+
+                <div class="form-group">
+
+                    <label for="coding_skills">
+                        Coding Skills
+                    </label>
+
+                    <input
+                        type="number"
+                        id="coding_skills"
+                        placeholder="0 - 100"
+                        min="0"
+                        max="100"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Communication Skills -->
+
+                <div class="form-group">
+
+                    <label for="communication_skills">
+                        Communication Skills
+                    </label>
+
+                    <input
+                        type="number"
+                        id="communication_skills"
+                        placeholder="0 - 100"
+                        min="0"
+                        max="100"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Row 6 -->
+
+            <div class="form-row">
+
+
+                <!-- Aptitude -->
+
+                <div class="form-group">
+
+                    <label for="aptitude_score">
+                        Aptitude Score
+                    </label>
+
+                    <input
+                        type="number"
+                        id="aptitude_score"
+                        placeholder="0 - 100"
+                        min="0"
+                        max="100"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Projects -->
+
+                <div class="form-group">
+
+                    <label for="projects">
+                        Projects
+                    </label>
+
+                    <input
+                        type="number"
+                        id="projects"
+                        placeholder="Number of projects"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <button
+                type="submit"
+                id="predictButton"
+            >
+
+                Predict Placement
+
+            </button>
+
+
+        </form>
+
+
+        <!-- Loading -->
+
+        <div
+            id="loading"
+            class="loading hidden"
+        >
+
+            Predicting...
+
+        </div>
+
+
+        <!-- Result -->
+
+        <div
+            id="result"
+            class="result hidden"
+        >
+
+            <h2>
+                Prediction Result
+            </h2>
+
+            <p id="predictionText"></p>
+
+            <p id="probabilityText"></p>
+
+        </div>
+
+
+        <!-- Error -->
+
+        <div
+            id="error"
+            class="error hidden"
+        >
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

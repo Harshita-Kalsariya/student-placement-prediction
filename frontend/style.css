@@ -1,0 +1,277 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f6fb;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.header h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.header p {
+
+    color: #666;
+
+    font-size: 16px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d5d9e0;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    background: white;
+
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    outline: none;
+
+    border-color: #4f46e5;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+}
+
+
+button:hover {
+
+    background: #3730a3;
+
+}
+
+
+button:disabled {
+
+    background: #999;
+
+    cursor: not-allowed;
+
+}
+
+
+.result {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    background: #eef2ff;
+
+}
+
+
+.result h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+#predictionText {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+#probabilityText {
+
+    font-size: 16px;
+
+    color: #555;
+
+}
+
+
+.error {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+}
+
+
+.loading {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .container {
+
+        width: 95%;
+
+        padding: 25px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 25px;
+
+    }
+
+}
