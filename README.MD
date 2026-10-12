@@ -1,5 +1,9 @@
 # 🎓 Student Placement Prediction
 
+## Live Demo
+
+Open Student Placement Prediction :->  https://student-placement-prediction-7uni.onrender.com
+
 An AI & Machine Learning project that predicts whether a student is likely to get placed based on their academic and skill-related information.
 
 ## 🚀 Features
