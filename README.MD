@@ -155,3 +155,7 @@ The goal of this project is to demonstrate how Machine Learning can be integrate
 **Harshita**
 
 Built as an AI & Machine Learning project for learning and portfolio development.
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
